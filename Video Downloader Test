@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Downloader</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding: 50px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        input { padding: 10px; width: 80%; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Download Videos Online</h1>
+        <input type="text" id="url" placeholder="Paste video URL here...">
+        <button onclick="downloadVideo()">Download</button>
+    </div>
+
+    <script>
+        function downloadVideo() {
+            const url = document.getElementById('url').value;
+            if (!url) {
+                alert("Please enter a URL!");
+                return;
+            }
+            // Use a video downloader API here (see Step 4)
+            alert("Downloading video from: " + url);
+        }
+    </script>
+</body>
+</html>
